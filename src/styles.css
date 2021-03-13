@@ -1,0 +1,118 @@
+body {
+  background-color: #848484;
+  background-image: url('./img/airpollution.jpg');
+  background-size: cover;
+  /* background-attachment: fixed;
+  background-position: top; */
+  background-blend-mode: multiply;
+  color: orange;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 800px;
+  height: 800px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.wrapper .selector .insert-city p {
+  margin-top: 8px;
+}
+
+.selector h2 {
+  padding: 15px 0;
+}
+
+.selector h3 {
+  padding: 10px 20px;
+  color: white;
+}
+
+.selector .insert-city {
+  padding-left: 0;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin-right: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.selector .insert-city input[type=text] {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid orange;
+  color: black;
+  height: 35px;
+  text-align: center;
+}
+
+.selector .insert-city input[type=text]:focus {
+  outline: none;
+  border: 1px solid orange;
+  color: black;
+}
+
+.city-search::-webkit-input-placeholder{
+  color: black;
+  letter-spacing: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 20px
+}
+
+.selector .insert-city .city-search {
+  width: 40%;
+}
+
+.button {
+  border-radius: 20px;
+  border: 1px solid orange;
+  height: 38px;
+  weight: 380px;
+  background-color: orange;
+}
+
+.selector .insert-city .src-button {
+  margin-right: 40px;
+}
+
+.new-btn{
+  visibility: hidden;
+}
+
+/* .wrapper {
+  width: 900px;
+  height: 700px;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, .2);
+  border-radius: 35px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  display: grid;
+}
+
+.wrapper:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 1000px 100px rgb(0 0 0 / 50%) inset;
+  filter: blur(4px);
+  border-radius: 35px;
+}
+
+.wrapper.green:before {
+  box-shadow: 0 0 1000px 100px rgb(0 255 0 / 50%) inset;
+} */

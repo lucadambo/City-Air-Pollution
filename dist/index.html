@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CITY AIR POLLUTION</title>
+    <meta name="author" content="Luca d'Ambrosio">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+  <script defer src="bundle.js"></script></head>
+  <body>
+
+    <div class="wrapper">
+      <div class="selector">
+        <h2>CITY AIR POLLUTION</h2>
+        <h3>Do you want to know the level of air pollution in your city?</h3>
+        <h3>Enter a city and press search or press the GEOLOCALIZE button to see the air pollution of the city closest to you</h3>
+        <div class="insert-city">
+          <input type="text" class="city-search" placeholder="Insert a city...">
+          <button type="button" class=" button src-btn" name="button">SEARCH</button>
+          <p>OTHERWISE</p>
+          <button type="button" class=" button geoLoc-btn" name="button">Use Geolocation</button>
+        </div>
+
+
+      </div>
+      <div class="info-result">
+        <h2 class="location">--</h2>
+        <h2 class="index">--</h2>
+        <h2 class="comment">--</h2>
+        <div class="warning">
+          <hr>
+          <table class="moreWarning">
+            <tr>
+              <td class="png">--</td>
+              <td class="hint">--</td>
+            </tr>
+          </table>
+          <hr>
+        </div>
+        <h3 class="update"></h3>
+        <h3 class="new-search"></h3>
+        <button class="button new-btn">Try another city</button>
+      </div>
+    </div>
+
+  </body>
+</html>
