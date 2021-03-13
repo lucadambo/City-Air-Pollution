@@ -1,4 +1,5 @@
 import './styles.css';
+import _ from 'lodash'
 
 // API
 
@@ -32,8 +33,10 @@ const axios = require('axios');
 
 async function getCoords(lat, lon){
   const responseGeo = await axios.get(`https://api.waqi.info/feed/geo:${lat};${lon}/?token=${API_KEY}`);
-    console.log(responseGeo);
+  console.log(responseGeo);
   getCityFromGeo(responseGeo);
+  const foo = _.get(responseGeo, responseGeo.data.data.city.name, "prova");
+  console.log(foo);
 }
 
 function getCityFromGeo(responseGeo) {
@@ -61,6 +64,49 @@ function setAction() {
 async function getResult(city) {
   const responseCity = await axios.get(`https://api.waqi.info/search/?token=${API_KEY}&keyword=${city}`);
   console.log(responseCity);
+  const error = "You have typed in a city that is not in the database. Please try again";
+  const foo = _.get(responseCity, responseCity.data.data.city, error);
+  console.log(foo);
+  if(foo == error){
+
+    const comment = document.querySelector('.comment');
+    comment.innerText = error;
+
+    const cleanPng = document.querySelector('td.png');
+    cleanPng.style.visibility = 'hidden';
+
+    const cleanCity = document.querySelector('.location');
+    cleanCity.innerHTML = "OH NO!";
+
+    const cleanUpdate = document.querySelector('.update');
+    cleanUpdate.style.visibility = 'hidden';
+
+    const cleanIndex = document.querySelector('.index');
+    cleanIndex.style.visibility = 'hidden';
+
+    const hint = document.querySelector('td.hint');
+    hint.style.visibility = 'hidden';
+
+    const newQueryBtn = document.querySelector ('.new-btn');
+    newQueryBtn.style.visibility = 'visible';
+
+    const searchCityInput = document.querySelector('.city-search');
+    searchCityInput.style.visibility = 'hidden';
+
+    const searchCityBtn = document.querySelector('.src-btn');
+    searchCityBtn.style.visibility = 'hidden';
+
+    const geoLocBtn = document.querySelector('.geoLoc-btn');
+    geoLocBtn.style.visibility = 'hidden';
+
+    const grid = document.querySelector('.warning');
+    grid.style.visibility = 'hidden';
+
+    const p = document.querySelector('p');
+    p.style.visibility = 'hidden';
+
+
+  }
   videoResults(responseCity);
 }
 
