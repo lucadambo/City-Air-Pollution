@@ -32,6 +32,7 @@ const axios = require('axios');
 
 async function getCoords(lat, lon){
   const responseGeo = await axios.get(`https://api.waqi.info/feed/geo:${lat};${lon}/?token=${API_KEY}`);
+    console.log(responseGeo);
   getCityFromGeo(responseGeo);
 }
 
