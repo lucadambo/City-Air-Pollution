@@ -35,7 +35,7 @@ async function getCoords(lat, lon){
   const responseGeo = await axios.get(`https://api.waqi.info/feed/geo:${lat};${lon}/?token=${API_KEY}`);
   console.log(responseGeo);
   getCityFromGeo(responseGeo);
-  const foo = _.get(responseGeo, responseGeo.data.data.city.name, "prova");
+  const foo = _.get(responseGeo, 'data.data.city', "prova");
   console.log(foo);
 }
 
@@ -65,7 +65,7 @@ async function getResult(city) {
   const responseCity = await axios.get(`https://api.waqi.info/search/?token=${API_KEY}&keyword=${city}`);
   console.log(responseCity);
   const error = "You have typed in a city that is not in the database. Please try again";
-  const foo = _.get(responseCity, responseCity.data.data.city, error);
+  const foo = _.get(responseCity, '.data.data.city', error);
   console.log(foo);
   if(foo == error){
 
@@ -182,6 +182,7 @@ function videoResults(responseQualityAir) {
 
     const newSearch = document.querySelector('.new-search');
     newSearch.innerText = 'Do you want to make another search?';
+    newSearch.style.visibility = 'visible';
 
     const newQueryBtn = document.querySelector ('.new-btn');
     newQueryBtn.style.visibility = 'visible';
