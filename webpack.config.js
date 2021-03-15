@@ -2,6 +2,8 @@ const Dotenv = require('dotenv-webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 
 module.exports = {
   mode: 'development',
@@ -17,6 +19,11 @@ module.exports = {
     }),
     new Dotenv({
       systemvars: true
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {from:'src/img',to:'imgs'}
+      ]
     })],
   module: {
     rules: [
