@@ -55,7 +55,7 @@ You need to add your APIs token to .env file, here's a snippet with .env sample:
 
 ### Executing program
 
-In the initial screen you will have two possibilities: either enter the name of the city and press the SEARCH key, or click the USE GEOLOCALIZATION key.
+In the initial screen you will have two possibilities: either enter the name of the city and press the SEARCH button, or click the USE GEOLOCALIZATION button.
 
 In both cases, the data of the searched city will appear, with the air pollution index, a comment and the time of the last update of the data.
 
@@ -63,7 +63,7 @@ At that point, a TRY ANOTHER CITY button will appear at the bottom to be able to
 
 ## Authors
 
-The program was created by Luca d'Ambrosio, with the help of the theory learned within the [start2impact](https://talent.start2impact.it/home/student_index) platform .
+The program was created by Luca d'Ambrosio, with the help of theory and coaches within the [start2impact](https://talent.start2impact.it/home/student_index) platform .
 
 ## Version History
 
