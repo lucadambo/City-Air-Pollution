@@ -65,7 +65,7 @@ async function getResult(city) {
   const responseCity = await axios.get(`https://api.waqi.info/search/?token=${API_KEY}&keyword=${city}`);
   console.log(responseCity);
   const error = "You have typed in a city that is not in the database. Please try again";
-  const foo = _.get(responseCity, '.data.data.city', error);
+  const foo = _.get(responseCity, 'data.data[0].aqi', error);
   console.log(foo);
   if(foo == error){
 
@@ -215,9 +215,14 @@ newQueryBtn.addEventListener('click', cleanData);
 function cleanData() {
   const cleanInputCity = document.querySelector('.city-search');
   cleanInputCity.value=""
+
   const cleanComment = document.querySelector('.comment');
   cleanComment.innerText = "--";
+
   const cleanPng = document.querySelector('td.png');
+  if (cleanPng.style.visibility == 'hidden'){
+    cleanPng.style.visibility = 'visible';
+  }
   cleanPng.innerHTML = "--";
 
 
@@ -228,10 +233,16 @@ function cleanData() {
   cleanUpdate.innerText = "--";
 
   const cleanIndex = document.querySelector('.index');
+  if (cleanIndex.style.visibility == 'hidden'){
+    cleanIndex.style.visibility = 'visible';
+  }
   cleanIndex.innerText = "--";
 
 
   const hint = document.querySelector('td.hint');
+  if (hint.style.visibility == 'hidden'){
+    hint.style.visibility = 'visible';
+  }
   hint.innerText = "--";
 
   newQueryBtn.style.visibility = 'hidden';
@@ -251,6 +262,10 @@ function cleanData() {
   const newSearch = document.querySelector('.new-search');
   newSearch.style.visibility = 'hidden';
 
+  const grid = document.querySelector('.warning');
+  if (grid.style.visibility == 'hidden'){
+    grid.style.visibility = 'visible';
+  }
 
 
 
