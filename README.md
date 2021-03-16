@@ -61,7 +61,7 @@ At that point, a TRY ANOTHER CITY button will appear at the bottom to be able to
 
 ## Authors
 
-The program was created by Luca d'Ambrosio, with the help of the theory learned within the start2impact platform. [start2impact](https://talent.start2impact.it/home/student_index)
+The program was created by Luca d'Ambrosio, with the help of the theory learned within the [start2impact](https://talent.start2impact.it/home/student_index) platform .
 
 ## Version History
 
