@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   watch: true,
   entry: './src/index.js',
   output: {
@@ -16,7 +16,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
-    new Dotenv({}),
+    new webpack.DefinePlugin({
+    'process.env': {
+      API_KEY': JSON.stringify(process.env.API_KEY),
+    }
+  }),
     new CopyWebpackPlugin({
       patterns: [
         {from:'src/img',to:'imgs'}
