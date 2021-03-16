@@ -1,5 +1,3 @@
-# JSGeo
-
 # Project Title
 
 Creation of an application able to return the air pollution level of a city, searched by the user or obtained through geolocation.
@@ -16,8 +14,8 @@ The request was to interface with an external API through a key to obtain the po
 - [JavaScript](https://javascript.info)
 - [Webpack](https://webpack.js.org)
 - [Air Quality Open Data Platform](https://aqicn.org/data-platform/token/#/)
-- [Axios] (https://www.npmjs.com/package/axios)
-- [Lodash] (https://lodash.com/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Lodash](https://lodash.com/)
 
 ### Dependencies
 
@@ -43,6 +41,8 @@ and start the app with
 	npm start
 ```
 
+Alternatively, you can also test the application directly from the site [CITY AIR POLLUTION](https://city-air-pollution.netlify.app/)
+
 #### API .env
 
 You need to add your APIs token to .env file, here's a snippet with .env sample:
@@ -61,7 +61,7 @@ At that point, a TRY ANOTHER CITY button will appear at the bottom to be able to
 
 ## Authors
 
-The program was created by Luca d'Ambrosio, with the help of the theory learned within the start2impact platform. (https://talent.start2impact.it/home/student_index)
+The program was created by Luca d'Ambrosio, with the help of the theory learned within the start2impact platform. [start2impact](https://talent.start2impact.it/home/student_index)
 
 ## Version History
 
