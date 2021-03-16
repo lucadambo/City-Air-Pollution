@@ -29,7 +29,7 @@ Just download this repo locally, install the repo with
 	npm install
 ```
 
-build the repo with 
+build the repo with
 
 ```javascript
 	npm run build
@@ -49,7 +49,7 @@ You need to add your APIs token to .env file, here's a snippet with .env sample:
 
 ```html
     API_KEY=yourtokenfromaqicn
-```	
+```
 
 ### Executing program
 
@@ -61,7 +61,7 @@ At that point, a TRY ANOTHER CITY button will appear at the bottom to be able to
 
 ## Authors
 
-The program was created by Luca d'Ambrosio, with the help of the theory learned within the start2impact platform. [start2impact](https://talent.start2impact.it/home/student_index)
+The program was created by Luca d'Ambrosio, with the help of the theory learned within the [start2impact](https://talent.start2impact.it/home/student_index) platform .
 
 ## Version History
 
