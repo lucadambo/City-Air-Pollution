@@ -2,6 +2,7 @@ const Dotenv = require('dotenv-webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const webpack = require('webpack’);
 
 
 module.exports = {
@@ -16,7 +17,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
-    new DefinePlugin({
+    new webpack.DefinePlugin({
     'process.env': {
       'API_KEY': JSON.stringify(process.env.API_KEY),
     }
