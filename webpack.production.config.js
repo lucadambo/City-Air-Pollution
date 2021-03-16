@@ -7,7 +7,6 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
-  watch: true,
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
