@@ -175,7 +175,7 @@ function videoResults(responseQualityAir) {
     comment.innerText = commentText;
 
     const png = document.querySelector('td.png');
-    png.innerHTML = "<img src='../src/img/" + image + "' width='140px' height='auto'>";
+    png.innerHTML = "imgs/" + image + "width='140px' height='auto'>";
 
     const hint = document.querySelector('td.hint');
     hint.innerText = warning;
