@@ -7,9 +7,9 @@ Creation of an application able to return the air pollution level of a city, sea
 ## Description
 
 
-The request was to interface with an external API through a key to obtain the pollution level of the city through geolocation, or through the search for the city by the user.ff
+The request was to interface with an external API through a key to obtain the pollution level of the city through geolocation, or through the search for the city by the user.
 
-## Getting Started 
+## Getting Started
 
 #### Technologies
 
@@ -21,7 +21,7 @@ The request was to interface with an external API through a key to obtain the po
 
 ### Dependencies
 
-In the assssspplication, in addition to the dev-dependencies, it was useful to use the dependencies of Axios and Lodash to facilitate the get request and manage any errors.
+In the application, in addition to the dev-dependencies, it was useful to use the dependencies of Axios and Lodash to facilitate the get request and manage any errors.
 
 ### Installing
 
