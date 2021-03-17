@@ -9,7 +9,7 @@ Creation of an application able to return the air pollution level of a city, sea
 
 The request was to interface with an external API through a key to obtain the pollution level of the city through geolocation, or through the search for the city by the user.ff
 
-## Getting Started
+## Getting Started 
 
 #### Technologies
 
