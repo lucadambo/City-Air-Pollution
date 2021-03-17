@@ -21,7 +21,7 @@ The request was to interface with an external API through a key to obtain the po
 
 ### Dependencies
 
-In the application, in addition to the dev-dependencies, it was useful to use the dependencies of Axios and Lodash to facilitate the get request and manage any errors.
+In the assssspplication, in addition to the dev-dependencies, it was useful to use the dependencies of Axios and Lodash to facilitate the get request and manage any errors.
 
 ### Installing
 
